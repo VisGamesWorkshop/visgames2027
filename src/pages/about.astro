@@ -136,7 +136,7 @@ function generateWigglyPath(seed: string) {
                     <path id={`wiggle-path-${teamMemberEntry.slug}`}
                           d={wigglyPath} 
                           fill="none" 
-                          stroke="#FF69B4" 
+                          stroke="#076af0" 
                           stroke-width="12" 
                           stroke-linecap="round"
                           stroke-linejoin="round"
@@ -154,12 +154,12 @@ function generateWigglyPath(seed: string) {
                         </h2>
                         </a>
                         {teamMemberEntry.data.linkedin && (
-                          <a href={teamMemberEntry.data.linkedin} target="_blank" rel="noopener" class="text-[#FF69B4] hover:text-[#E055A1] transition-colors">
+                          <a href={teamMemberEntry.data.linkedin} target="_blank" rel="noopener" class="text-[#076af0] hover:text-[#0554c7] transition-colors">
                             <Icon name="mdi:linkedin" class="w-5 h-5" />
                           </a>
                         )}
                       </div>
-                    <h4 class="inline-flex items-center justify-center px-3 py-1 bg-[#FF69B4] text-white text-sm font-semibold rounded-full shadow-md hover:bg-[#E055A1] transition-colors duration-200 mb-2">
+                    <h4 class="inline-flex items-center justify-center px-3 py-1 bg-[#076af0] text-white text-sm font-semibold rounded-full shadow-md hover:bg-[#0554c7] transition-colors duration-200 mb-2">
                       {teamMemberEntry.data.role}
                     </h4>
                     <h3 class="text-md text-slate-500">

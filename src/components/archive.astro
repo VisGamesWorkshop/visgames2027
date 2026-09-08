@@ -31,13 +31,13 @@ const defaultDescription = `From card games to digital puzzles — take a look a
         <div class="accepted-underline"></div>
       </div>
     ) : (
-      <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-[#FF69B4] mb-4">
+      <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-[#076af0] mb-4">
         {title || defaultTitle}
       </h2>
     )}
 
     {!hideSubheading && (
-      <h3 class="text-2xl lg:text-3xl font-semibold text-[#FF69B4] mb-6">
+      <h3 class="text-2xl lg:text-3xl font-semibold text-[#076af0] mb-6">
         {year} - Accepted VisGames
       </h3>
     )}
@@ -51,20 +51,20 @@ const defaultDescription = `From card games to digital puzzles — take a look a
 
     <ul class="mt-8 list-disc list-inside text-slate-600 text-lg space-y-4">
       {papers.map((paper) => (
-        <li class="border-l-4 border-[#FF69B4] pl-4 py-2 bg-white/50 rounded-r-lg">
+        <li class="border-l-4 border-[#076af0] pl-4 py-2 bg-white/50 rounded-r-lg">
           {paper.pdfUrl ? (
-            <a href={paper.pdfUrl} target="_blank" class="text-[#FF69B4] hover:text-[#E055A1]">
+            <a href={paper.pdfUrl} target="_blank" class="text-[#076af0] hover:text-[#0554c7]">
               <span>🔗</span> <strong><em>{paper.title}</em></strong>
             </a>
           ) : (
-            <span class="text-[#FF69B4]"><span>🔗</span> <strong><em>{paper.title}</em></strong></span>
+            <span class="text-[#076af0]"><span>🔗</span> <strong><em>{paper.title}</em></strong></span>
           )}
           <br />
           <span class="text-slate-500">- {paper.authors}</span>
           {paper.nightingaleUrl && (
             <>
               <br />
-              <a href={paper.nightingaleUrl} target="_blank" class="text-[#FF69B4] hover:underline font-bold hover:text-[#E055A1]">
+              <a href={paper.nightingaleUrl} target="_blank" class="text-[#076af0] hover:underline font-bold hover:text-[#0554c7]">
                 👉 Read it on Nightingale Magazine!
               </a>
             </>
@@ -100,7 +100,7 @@ const defaultDescription = `From card games to digital puzzles — take a look a
 
   .accepted-badge {
     display: inline-block;
-    background: linear-gradient(135deg, #FF69B4, #E055A1);
+    background: linear-gradient(135deg, #076af0, #0554c7);
     color: white;
     font-size: 0.8rem;
     font-weight: 700;
@@ -109,14 +109,14 @@ const defaultDescription = `From card games to digital puzzles — take a look a
     padding: 0.35rem 1.2rem;
     border-radius: 999px;
     margin-bottom: 1rem;
-    box-shadow: 0 2px 12px rgba(255, 105, 180, 0.4);
+    box-shadow: 0 2px 12px rgba(7, 106, 240, 0.35);
   }
 
   .accepted-title {
     font-size: clamp(2.5rem, 6vw, 4.5rem);
     font-weight: 900;
     line-height: 1.1;
-    background: linear-gradient(135deg, #FF69B4 0%, #c026a0 50%, #FF69B4 100%);
+    background: linear-gradient(135deg, #076af0 0%, #0b4ec9 50%, #076af0 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -129,7 +129,7 @@ const defaultDescription = `From card games to digital puzzles — take a look a
     margin: 0.75rem auto 0;
     height: 4px;
     width: 80px;
-    background: linear-gradient(90deg, transparent, #FF69B4, transparent);
+    background: linear-gradient(90deg, transparent, #076af0, transparent);
     border-radius: 2px;
   }
 
