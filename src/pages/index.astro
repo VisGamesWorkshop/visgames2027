@@ -10,8 +10,8 @@ import About from "./about.astro";
 import Program from "@components/program.astro";
 import Archive from "@components/archive.astro";
 import Footer from "@components/footer.astro";
-import Committee from "@components/committee.astro";
-import Reviewers from "@components/reviewers.astro";
+// import Committee from "@components/committee.astro";
+// import Reviewers from "@components/reviewers.astro";
 
 // Import paper PDFs for 2025
 import Paper1 from "@assets/2025/paper1.pdf";
@@ -100,14 +100,15 @@ const papers2025 = [
     <Hero />
     <Pricing />
     <Program />
-    <Archive year={"2026"} title={"Accepted VisGames"} hideSubheading={true} description={"The wait is over — here are the five accepted papers coming to VisGames 2026! 🎮 We can't wait to see you in Nottingham on June 8th."} papers={papers2026} />
     <Features />
     <Topics />
     <Socials />
     <Cta />
     <About />
-    <Committee />
-    <Reviewers />
+    {/* Program committee and reviewer sections are intentionally disabled for now while their content is updated. */}
+    {/* <Committee /> */}
+    {/* <Reviewers /> */}
+    <Archive year={"2026"} description={"From Nottingham with games — take a look at the research that kept the fun going. These are the papers that made our second workshop a blast! 🎮"} papers={papers2026} />
     <Archive year={"2025"} papers={papers2025} />
   </Container>
 </Layout>

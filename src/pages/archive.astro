@@ -1,0 +1,106 @@
+---
+import Container from "@components/container.astro";
+import Archive from "@components/archive.astro";
+import Layout from "@layouts/Layout.astro";
+
+// Import paper PDFs for 2025
+import Paper1 from "@assets/2025/paper1.pdf";
+import Paper2 from "@assets/2025/paper2.pdf";
+import Paper3 from "@assets/2025/paper3.pdf";
+import Paper4 from "@assets/2025/paper4.pdf";
+import Paper5 from "@assets/2025/paper5.pdf";
+import Paper6 from "@assets/2025/paper6.pdf";
+
+// Import paper PDFs for 2026
+import Paper2026_1000 from "@assets/2026/visgames.20261000.pdf";
+import Paper2026_1001 from "@assets/2026/visgames.20261001.pdf";
+import Paper2026_1002 from "@assets/2026/visgames.20261002.pdf";
+import Paper2026_1003 from "@assets/2026/visgames.20261003.pdf";
+import Paper2026_1004 from "@assets/2026/visgames.20261004.pdf";
+
+const papers2026 = [
+  {
+    title: "Data-Cards Drawagram: A Design Research Approach to Visualization Literacy",
+    authors: "Constanze Bachg, Yalin Ding, David Frenkel, Dion van Litsenburg, Tom Uijlenhoet, Davide Ceneda",
+    pdfUrl: Paper2026_1000,
+  },
+  {
+    title: "Data-Driven Narratives Cards: A Card-Based Design Activity for Participatory Data Storytelling",
+    authors: "Damla Çay",
+    pdfUrl: Paper2026_1001,
+  },
+  {
+    title: "Fishing for Papers: A Serendipitous Knowledge Discovery Game",
+    authors: "Johannes Eschner, Yuhan Guo",
+    pdfUrl: Paper2026_1002,
+  },
+  {
+    title: "Can You Trust This Chart? A Visualization Game Exploring Deception in Human- and AI-Created Charts",
+    authors: "Mandy Keck",
+    pdfUrl: Paper2026_1003,
+  },
+  {
+    title: "Happy Puzzles: Puzzle Games for Visualization Task Abstractions",
+    authors: "Sandhya Rajendran, Michaela Tuscher, Alessio Arleo, Daniel Archambault, Silvia Miksch, Tatiana von Landesberger, Velitchko Filipov",
+    pdfUrl: Paper2026_1004,
+  },
+];
+
+const papers2025 = [
+  {
+    title: "BattleGraphs: Forge, Fortify, and Fight in the Network Arena",
+    authors: "H. Ehlers, D. Pahr, S. di Bartolomeo, C. Stoiber, and V. Filipov",
+    pdfUrl: Paper1,
+    nightingaleUrl: "https://nightingaledvs.com/battlegraphs/",
+  },
+  {
+    title: "Cards, Charts, and Strategy: A Game-Based Approach to Data Visualization for Patterns",
+    authors: "A. Boucher and C. Stoiber",
+    pdfUrl: Paper2,
+    nightingaleUrl: "https://nightingaledvs.com/cards-charts-and-strategy/",
+  },
+  {
+    title: "Drawagram: A Game-Based Learning Approach to Teach Time-based Data Visualization and Visual Storytelling",
+    authors: "S. Plankensteiner and C. Stoiber",
+    pdfUrl: Paper3,
+    nightingaleUrl: "https://nightingaledvs.com/drawagram-a-game/",
+  },
+  {
+    title: "Grasping Data Through Play: Exploring Co-Design Activities for Children's Engagement with Personal Data",
+    authors: "D. Perera, D. Kaufmann, A. Ramírez-Duque, A. Atabey, S. Brewster, C. Wilson, J. Vines, L. Plowman, U. Hinrichs, and A. Manches",
+    pdfUrl: Paper4,
+  },
+  {
+    title: "Leveraging Popular Board Games to Teach Data Visualization",
+    authors: "L. Amabili, M.E. Gröller, and R. G. Raidou",
+    pdfUrl: Paper5,
+    nightingaleUrl: "https://nightingaledvs.com/teach-data-viz-through-play/",
+  },
+  {
+    title: "Playing with Knowledge: Leveraging Visualization Games for Data Validation and Inspiration",
+    authors: "F. Becker, R. P. Warnking, and T. Blascheck",
+    pdfUrl: Paper6,
+  },
+];
+---
+
+<Layout title="Archive | VisGames Workshop">
+  <Container>
+    <div class="py-16">
+      <Archive
+        year={"2026"}
+        title={"Accepted VisGames 2026"}
+        hideSubheading={true}
+        description={"The 2026 workshop took place in Nottingham. These are the accepted papers from that edition, now archived in the dedicated archive section."}
+        papers={papers2026}
+      />
+
+      <Archive
+        year={"2025"}
+        title={"Accepted VisGames 2025"}
+        description={"The inaugural workshop brought together a strong set of contributions at the intersection of visualization and games."}
+        papers={papers2025}
+      />
+    </div>
+  </Container>
+</Layout>
