@@ -37,22 +37,20 @@ import { Icon } from "astro-icon/components";
       June 2027, Stuttgart, Germany
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <a
-        href="https://github.com/VisGamesWorkshop"
-        target="_blank"
-        rel="noopener"
-        class="flex gap-2 items-center justify-center px-2 py-1 border border-gray-300 rounded-sm text-base font-medium hover:border-gray-500 transition">
+      <span
+        aria-disabled="true"
+        title="Coming soon for this edition"
+        class="flex gap-2 items-center justify-center px-2 py-1 border border-gray-200 rounded-sm text-base font-medium text-gray-400 cursor-not-allowed select-none">
         <Icon class="w-5 h-5" name="bx:bxl-github" />
         Submissions & Materials
-      </a>
-      <a
-        href="https://www.eurovis.org.uk/"
-        target="_blank"
-        rel="noopener"
-        class="flex gap-2 items-center justify-center px-2 py-1 border border-gray-300 rounded-sm text-base font-medium hover:border-gray-500 transition">
+      </span>
+      <span
+        aria-disabled="true"
+        title="Coming soon for this edition"
+        class="flex gap-2 items-center justify-center px-2 py-1 border border-gray-200 rounded-sm text-base font-medium text-gray-400 cursor-not-allowed select-none">
         <Icon class="w-5 h-5" name="mdi:file-document-outline" />
         EuroVis Program
-      </a>
+      </span>
     </div>
   </div>
 </main>
