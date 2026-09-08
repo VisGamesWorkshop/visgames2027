@@ -2,7 +2,7 @@
 draft: false
 name: "Mandy Keck"
 affiliation: "University of Applied Sciences Upper Austria"
-role: "Workshop Chair"
+role: "Co-organizer"
 avatar: {
     src: "./../../assets/pictures/mandy.jpeg",
     alt: "Mandy Keck"

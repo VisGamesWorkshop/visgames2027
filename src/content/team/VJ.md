@@ -2,7 +2,7 @@
 draft: false
 name: "Victor Oliveira"
 affiliation: "University of Applied Science St. Pölten"
-role: "Publication Chair"
+role: "Co-organizer"
 avatar: {
     src: "./../../assets/pictures/victor.jpg",
     alt: "Victor-Adriel De-Jesus-Oliveira"

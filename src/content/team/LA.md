@@ -2,7 +2,7 @@
 draft: false
 name: "Lorenzo Amabili"
 affiliation: "Buzzi's RTD & TU Wien"
-role: "Workshop Chair"
+role: "Co-organizer"
 avatar: {
     src: "./../../assets/pictures/lorenzo.jpeg",
     alt: "Lorenzo Amabili"

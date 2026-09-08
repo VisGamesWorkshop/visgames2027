@@ -2,7 +2,7 @@
 draft: false
 name: "Magdalena Boucher"
 affiliation: "University of Applied Science St. Pölten"
-role: "Publication Chair"
+role: "Co-organizer"
 avatar: {
     src: "./../../assets/pictures/momo.png",
     alt: "Magdalena Boucher"

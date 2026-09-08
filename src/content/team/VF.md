@@ -2,7 +2,7 @@
 draft: false
 name: "Velitchko Filipov"
 affiliation: "TU Wien"
-role: "Co-Chair"
+role: "Organizer"
 avatar: {
     src: "./../../assets/pictures/velitchko.jpg",
     alt: "Velitchko Filipov"
